@@ -1,19 +1,19 @@
-import './CourseCard.css';
+import './CourseCards.css';
 
 const CourseCards = () => {
     return (
         <div className="containers">
             <div className="card">
                 <div className="icon">
-                    <img className='IMG1' src="https://static.vecteezy.com/system/resources/previews/019/518/544/original/programming-icon-for-your-website-mobile-presentation-and-logo-design-free-vector.jpg" alt="Online Counseling Icon" />
+                    <img className='IMG1' src="https://images.sftcdn.net/images/t_app-icon-m/p/1385060a-96d3-11e6-9bb5-00163ed833e7/3345462418/java-development-kit-jdk-Java-logo.png" alt="Online Counseling Icon" />
                 </div>
-                <h3>Programming Languages</h3>
+                <h3>Core Java</h3>
                 <p className='peragraph'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut esse perspiciatis provident tempora beatae amet sint, doloribus odio dolorem alias tempore.?</p>
                 <a className='anchor' href="#">Learn More →</a>
             </div>
             <div className="card">
                 <div className="icon">
-                    <img src="https://skilllauncher.com/uploads/thumbnails/course_thumbnails/course_thumbnail_155.jpg" alt="Audio Course Icon" />
+                    <img src="https://static.vecteezy.com/system/resources/previews/015/514/121/non_2x/dsa-letter-logo-design-on-white-background-dsa-creative-initials-letter-logo-concept-dsa-letter-design-vector.jpg" />
                 </div>
                 <h3>DSA Course</h3>
                 <p className='peragraph'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut esse perspiciatis provident tempora beatae amet sint, doloribus odio dolorem alias tempore.?</p>
