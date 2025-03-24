@@ -69,7 +69,7 @@ const HeroSection = () => {
           </div>
           <p className="pera">Learning App for CBSE students and Test Generator for teachers to create question papers in minutes.</p>
           <div className="button">
-            <a className="btn" href="/course/">Start Now</a> 
+            <a className="btn" href="/course/">Get Started</a> 
             <a className="btn btn-success" target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=in.techchefs.MyCBSEGuide&amp;referrer=utm_source%3Dmycbseguide_home_banner_top%26utm_medium%3Dbutton%26utm_campaign%3Dhome">
               Install App
             </a>
