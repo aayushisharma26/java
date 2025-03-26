@@ -32,3 +32,4 @@ const CourseCards = () => {
 }
 
 export default CourseCards;
+
