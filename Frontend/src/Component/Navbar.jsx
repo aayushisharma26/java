@@ -58,6 +58,7 @@ const Navbar = () => {
         <div className="mobile-nav-button">
           <div className="anim-layer"></div>
           <Link to="/signup">Register</Link>
+
         </div>
         <div id="hamburger-cross" onClick={handleCrossClick}>&#10006;</div>
       </div>
