@@ -7,6 +7,8 @@ import { RiMailCheckFill, RiArrowRightLine } from 'react-icons/ri';
 import Footer from './Component/Footer.jsx'
 import Navbar from './Component/Navbar.jsx';
 import SignUp from './SignUp/SignUp';
+import Login from './Login/Login';
+
 
 
 
@@ -19,7 +21,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUp />} />
-        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/login" element={<Login />} />
 
 
       </Routes>
