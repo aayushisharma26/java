@@ -4,12 +4,18 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 100%;
+  /* width: 100%; */
 }
+.about-container img {
+    width: 200px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 10px;  }
+  
 
 .about-card {
-  width: 90%; /* Har section ki width badhakar 90% kar di */
-  max-width: 1200px; /* Maximum width set ki taaki bohot zyada na badhe */
+  width: 90%; 
+  max-width: 1200px; 
   padding: 20px;
   background: #f9f9f9;
   border-radius: 10px;
@@ -74,15 +80,21 @@
     max-width: 900px;
     margin: auto;
     text-align: center;
-  }
-  
-  #image {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image {
+    width: 100%; 
+    max-width: 1200px; 
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 10px;
     display: block;
-  }
-  
-  #title {
+}
+
+#title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,13 +104,15 @@
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
-  }
-  
-  #title-text {
+    width: 80%; 
+}
+
+#title-text {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-  }
+}
+
   
   #heading {
     font-size: 2rem;
@@ -206,53 +220,62 @@
     gap: 20px;
   }
   
-  
   #team-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .team-member {
-    background: #fff;
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    gap: 20px; 
+    overflow-x: auto; 
+    padding: 20px;
+}
+
+.team-member {
+    background: #f8f9fa;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
+    width: 230px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-img {
-    width: 100px;
-    height: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-img {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-  }
-  
-  .team-name {
-    font-size: 1.3rem;
-    font-weight: bold;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: 600; 
     color: #333;
-  }
-  
-  .team-about {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  #content5 {
+}
+
+.team-about {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+#content5 {
     text-align: center;
     padding: 50px;
-    background-color: #fff;
-  }
-  
-  #content5 h1 {
+    background-color: #ffffff;
+}
+
+#content5 h1 {
     font-size: 2rem;
+    font-weight: 700; 
     color: #222;
-  }
-  
+    margin-bottom: 20px;
+}
+
   #news {
     display: flex;
     flex-wrap: wrap;
