@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <Link to="/">Logo</Link>
+        <img src="https://logos-world.net/wp-content/uploads/2022/07/Java-Symbol.png" alt="" />
       </div>
       <div className="nav-items">
         <ul>
@@ -57,7 +57,8 @@ const Navbar = () => {
         </div>
         <div className="mobile-nav-button">
           <div className="anim-layer"></div>
-          <Link to="/signup">Sign Up</Link>
+          <Link to="/signup">Register</Link>
+
         </div>
         <div id="hamburger-cross" onClick={handleCrossClick}>&#10006;</div>
       </div>
