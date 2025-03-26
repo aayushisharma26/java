@@ -1,10 +1,19 @@
-import React from 'react';
-
+import Banner from './Banner';
+import CourseCards from './CourseCards';
+import Something from './Something';
+import Statistics from './Statistics.jsx';
+import TrainerSection from './TrainerSection';
+import Testimonials from './TestimonialsData';
 
 function Home() {
   return (
     <>
-      <h1>Hello I'm Home Page</h1>
+      <Banner />
+      <CourseCards />
+      <Something />
+      <Statistics />
+      <TrainerSection />
+      <Testimonials/>
     </>
   );
 }
