@@ -9,9 +9,11 @@ import Footer from './Component/Footer.jsx'
 // import Login from './Login/Login';
 // import SignUp from './SignUp/SignUp';
 import CoursesFilter from './courses/CoursesFilter';
+import CourseCard from './courses/CourseCard.jsx';
 import Navbar from './Component/Navbar.jsx';
 import SignUp from './SignUp/SignUp';
 import Login from './Login/Login';
+import Filter from './courses/Filter.jsx';
 
 
 
@@ -29,6 +31,8 @@ const App = () => {
         {/* <Route path="/login" element={<Login />} /> */}
         {/* <Route path="/signup" element={<SignUp />} /> */}
         <Route path="/courses" element={<CoursesFilter />} />
+        <Route path="/courses" element={<CourseCard />} />
+        <Route path="/courses" element={<Filter />} />
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />

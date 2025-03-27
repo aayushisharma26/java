@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 import './Courses.css';
 import CourseCard from '../courses/CourseCard.jsx';
 import Filter from './Filter.jsx';
@@ -55,6 +56,16 @@ function CoursesFilter() {
     setFilteredCourses(filtered);
   };
 
+
+  const navigate = useNavigate();
+
+
+  function handleEnroll() {
+      navigate("/signup")
+
+  }
+
+
   return (
     <div className="App">
       <div className='slider-box'>
@@ -74,6 +85,7 @@ function CoursesFilter() {
               language={course.language}
               rating={course.rating}
               price={course.price}
+              onEnroll={handleEnroll}
             />
           ))}
         </div>
@@ -106,8 +118,6 @@ function CoursesFilter() {
         </div>
       </div>
     </div>
- 
-      {/*  */}
     </div>
   );
 }

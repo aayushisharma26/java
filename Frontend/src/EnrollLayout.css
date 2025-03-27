@@ -1,4 +1,4 @@
-.app-container {
+/* .app-container {
   display: flex;
   gap: 20px;
   padding: 20px;
@@ -72,7 +72,7 @@
 
 .topic-table th {
   background: #dee2a0;
-  color: white;
+  color: black;
 }
 
 .expand-btn {
@@ -105,6 +105,134 @@ textarea {
 
 select {
   padding: 5px;
+}
+
+img {
+  width: 30px;
+  height: auto;
+  margin-left: 5px;
+} */
+
+
+
+.app-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black; 
+}
+
+.accordion {
+  width: 300px;
+  background: white;
+}
+
+.accordion-item {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: hsl(44, 87%, 94%);
+  color: black;
+}
+
+.accordion-titles {
+  background: hsl(44, 87%, 94%);
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  padding: 10px;
+  background: hsl(44, 87%, 94%);
+  color: black;
+}
+
+.accordion-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion-content li {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+.accordion-content li:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  background: hsl(44, 87%, 94%);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.topic-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.topic-table th, .topic-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  background: hsl(44, 87%, 94%);
+  color: black;
+}
+
+.topic-table th {
+  background: hsl(44, 87%, 94%);
+  color: black;
+}
+
+.expand-btn {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  margin-top: 5px;
+  background: hsl(44, 87%, 94%);
+  color: black;
+  border: 1px solid black;
+}
+
+.start-btn, .add-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.start-btn:hover, .add-btn:hover {
+  background: #218838;
+}
+
+select {
+  padding: 5px;
+  background: hsl(44, 87%, 94%);
+  color: black;
+  border: 1px solid black;
 }
 
 img {
