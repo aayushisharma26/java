@@ -61,6 +61,7 @@
   
   .nav-logo img{
     height: 80px;
+    width: 90%;
   }
   
   .nav-button {
@@ -91,6 +92,7 @@
   
   .nav-button:hover a {
     color: #141214;
+    background-color: aqua;
   }
   
   .nav-button a {

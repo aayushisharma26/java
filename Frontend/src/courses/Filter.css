@@ -4,8 +4,8 @@
     flex-direction: column;
     max-width: 100%;
     padding: 16px;
-    margin: 50px 16px 16px 30px; /* top right bottom left */
-    background-color: #fff;
+    margin: 50px 16px 16px 30px; 
+    background-color: hsl(44, 87%, 94%);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: transparent;
@@ -59,7 +59,7 @@
   }
   
   .category-button.active {
-    background-color: #6c63ff;
+    background-color: #c30f0c;
     color: #fff;
   }
   
@@ -67,9 +67,6 @@
     background-color: #ddd;
   }
   
-  /* Media Queries */
-  
-  /* For tablets and larger screens */
   @media (max-width: 1024px) {
     .filter-container {
       flex: 0 0 100%;
