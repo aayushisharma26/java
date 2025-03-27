@@ -83,16 +83,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 #image {
-    width: 100%; 
-    max-width: 1200px; 
-    height: 300px; 
-    object-fit: cover; 
-    border-radius: 10px;
-    display: block;
+  width: 100%; 
+  max-width: 900px; /* Pehle 100px tha, ab 400px kar diya */
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  display: block;
 }
+
 
 #title {
     position: absolute;
