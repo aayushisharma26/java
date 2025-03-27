@@ -105,8 +105,6 @@ function CoursesFilter() {
             <div className="input-group">
               <input type="text" placeholder="Your Name" />
               <input type="text" placeholder="Your Email" />
-
-              {/* <input type="email" placeholder="Your Email" /> */}
             </div>
             <div className="input-group">
               <input type="text" placeholder="Your Phone" />
