@@ -17,6 +17,8 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+
     try {
       const response = await fetch('https://java-5taq-aayushi-sharmas-projects.vercel.app/api/user/register', {
         method: 'POST',

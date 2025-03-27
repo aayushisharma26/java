@@ -1,9 +1,22 @@
 import { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.main.css'; 
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const navigate = useNavigate();
+
+  const isAuthenticated = !!localStorage.getItem("token");
+
+  const handleNavigation = (path) => {
+    console.log("Navigating to:", path);
+    if (!isAuthenticated && path !== "/") {
+      alert("Please login or sign up first!");
+      navigate("/signup");
+    } else {
+      navigate(path);
+    }
+  };
 
   const handleHamburgerClick = () => {
     setMobileMenuVisible(true);
@@ -35,12 +48,12 @@ const Navbar = () => {
       <div className="nav-items">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/courses">Courses</Link></li>
-          <li><Link to="/about">About</Link></li>
+          <li><span onClick={() => handleNavigation('/courses')} style={{ cursor: 'pointer' }}>Courses</span></li>
+          <li><span onClick={() => handleNavigation('/about')} style={{ cursor: 'pointer' }}>About</span></li>
+          {/* <li><span onClick={() => handleNavigation('/layout')} style={{ cursor: 'pointer' }}>Assignment</span></li> */}
         </ul>
       </div>
       <div className="nav-button">
-        <div className="anim-layer"></div>
         <Link to="/signup">Register</Link>
       </div>
       <div id="hamburger-menu" onClick={handleHamburgerClick}>&#9776;</div>
@@ -49,14 +62,13 @@ const Navbar = () => {
         <div className="mobile-nav-items">
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/courses">Courses</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><span onClick={() => handleNavigation('/courses')} style={{ cursor: 'pointer' }}>Courses</span></li>
+            <li><span onClick={() => handleNavigation('/about')} style={{ cursor: 'pointer' }}>About</span></li>
           </ul>
         </div>
         <div className="mobile-nav-button">
           <div className="anim-layer"></div>
           <Link to="/signup">Register</Link>
-
         </div>
         <div id="hamburger-cross" onClick={handleCrossClick}>&#10006;</div>
       </div>

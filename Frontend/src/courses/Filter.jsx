@@ -1,4 +1,3 @@
-// src/filters/Filter.jsx
 import  { useState } from 'react';
 import './Filter.css';
 
